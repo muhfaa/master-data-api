@@ -1,0 +1,265 @@
+{
+	"info": {
+		"_postman_id": "096cbdbd-f8ec-43b9-9706-60c71b7d5436",
+		"name": "Master Data Collaction",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Kerusakan",
+			"item": [
+				{
+					"name": "Insert Kerusakan",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"jenis_kerusakan\": \"Mati Total\",\n    \"lama_pengerjaan\": \"2 (menit)\",\n    \"harga\": 300000\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:7070/v1/kerusakan/add",
+							"host": [
+								"localhost"
+							],
+							"port": "7070",
+							"path": [
+								"v1",
+								"kerusakan",
+								"add"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get List Kerusakan",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:7070/v1/kerusakan",
+							"host": [
+								"localhost"
+							],
+							"port": "7070",
+							"path": [
+								"v1",
+								"kerusakan"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Update data kerusakan",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"id\": 1,\n    \"jenis_kerusakan\": \"Boot loop\",\n    \"lama_pengerjaan\": \"90 (detik)\",\n    \"harga\": 250000,\n    \"version\": 1\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:7070/v1/kerusakan/update",
+							"host": [
+								"localhost"
+							],
+							"port": "7070",
+							"path": [
+								"v1",
+								"kerusakan",
+								"update"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete kerusakan",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "localhost:7070/v1/kerusakan/id/1",
+							"host": [
+								"localhost"
+							],
+							"port": "7070",
+							"path": [
+								"v1",
+								"kerusakan",
+								"id",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get Kerusakan",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:7070/v1/kerusakan/id/2",
+							"host": [
+								"localhost"
+							],
+							"port": "7070",
+							"path": [
+								"v1",
+								"kerusakan",
+								"id",
+								"2"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Teknisi",
+			"item": [
+				{
+					"name": "Insert Teknisi",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"full_name\": \"gunawan\",\n    \"specialist\": \"samsung\",\n    \"platform\": \"Android\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:7070/v1/teknisi/add",
+							"host": [
+								"localhost"
+							],
+							"port": "7070",
+							"path": [
+								"v1",
+								"teknisi",
+								"add"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get All Teknisi",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:7070/v1/teknisi",
+							"host": [
+								"localhost"
+							],
+							"port": "7070",
+							"path": [
+								"v1",
+								"teknisi"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Update Teknisi",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"id\": 1,\n    \"full_name\": \"boby\",\n    \"specialist\": \"xiaomi\",\n    \"platform\": \"Android\",\n    \"version\": 1\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:7070/v1/teknisi/update",
+							"host": [
+								"localhost"
+							],
+							"port": "7070",
+							"path": [
+								"v1",
+								"teknisi",
+								"update"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Update Antrian",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"id\": 2,\n    \"jumlah_antrian\": 2,\n    \"version\": 1\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:7070/v1/teknisi/antrian",
+							"host": [
+								"localhost"
+							],
+							"port": "7070",
+							"path": [
+								"v1",
+								"teknisi",
+								"antrian"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete Teknisi",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "localhost:7070/v1/teknisi/id/1",
+							"host": [
+								"localhost"
+							],
+							"port": "7070",
+							"path": [
+								"v1",
+								"teknisi",
+								"id",
+								"1"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}
