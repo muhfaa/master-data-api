@@ -55,6 +55,21 @@ Type:
 URL: localhost:7070/v1/kerusakan/id/2
 ```
 
+***Response***
+
+```js
+{
+    "code": "success",
+    "message": "success",
+    "data": {
+        "id": 2,
+        "jenis_kerusakan": "Mati Total",
+        "lama_pengerjaan": "2 (menit)",
+        "harga": 300000,
+        "version": 1
+    }
+}
+```
 
 
 ### 3. Get List Kerusakan
@@ -67,6 +82,25 @@ URL: localhost:7070/v1/kerusakan/id/2
 Method: GET
 Type: 
 URL: localhost:7070/v1/kerusakan
+```
+
+
+***Response***
+
+```js
+{
+    "code": "success",
+    "message": "success",
+    "data": [
+        {
+            "id": 2,
+            "jenis_kerusakan": "Mati Total",
+            "lama_pengerjaan": "2 (menit)",
+            "harga": 300000,
+            "version": 1
+        }
+    ]
+}
 ```
 
 
@@ -155,6 +189,40 @@ Type:
 URL: localhost:7070/v1/teknisi
 ```
 
+***Response***
+
+```js
+{
+    "code": "success",
+    "message": "success",
+    "data": [
+        {
+            "id": 2,
+            "full_name": "gunawan",
+            "specialist": "samsung",
+            "platform": "Android",
+            "jumlah_antrian": 2,
+            "version": 2
+        },
+        {
+            "id": 3,
+            "full_name": "Jhon",
+            "specialist": "iphone",
+            "platform": "ios",
+            "jumlah_antrian": 22,
+            "version": 15
+        },
+        {
+            "id": 4,
+            "full_name": "Jhon",
+            "specialist": "iphone",
+            "platform": "ios",
+            "jumlah_antrian": 23,
+            "version": 25
+        }
+    ]
+}
+```
 
 
 ### 3. Insert Teknisi
@@ -235,8 +303,3 @@ URL: localhost:7070/v1/teknisi/update
 }
 ```
 
-
-
----
-[Back to top](#master-data-collaction)
-> Made with &#9829; by [thedevsaddam](https://github.com/thedevsaddam) | Generated at: 2021-12-13 20:54:15 by [docgen](https://github.com/thedevsaddam/docgen)
